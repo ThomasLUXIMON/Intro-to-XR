@@ -1,17 +1,30 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
+using UnityEngine.UIElements;
 
 public class lightSCRIPT : MonoBehaviour
 {
-    public lightSCRIPT light;
- 
+    public Light light;
     //
-    void Start() {
-        light = GetComponent<lightSCRIPT>();
-    if (Input.GetKeyDown("tab"))
-        {
-            lightSCRIPT.color = Color.red;
+    void Start()
+    {
+        light = GetComponent<Light>();
+    }
+    void Update()
+    {
 
+        if (Input.GetKeyDown("Button.One"))
+        {
+            {
+                
+                if (Color.blue == light.color)
+                {
+                    light.color = Color.red;
+                }
+                else
+                {
+                    light.color = Color.blue;
+                }
+            }
         }
     }
 }
