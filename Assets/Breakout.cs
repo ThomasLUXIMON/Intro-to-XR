@@ -8,11 +8,10 @@ public class Breakout : MonoBehaviour
     Vector3 Rotate_3;
     Vector3 Initial_rotate;
 
-    //public InputActionReference action;
+    
     public void Start()
     {
-        //action.action.Enable();
-        //action.action.performed += (ctx) =>
+        
         Initial_position = transform.position;
         Position_A = new Vector3(0f, 50f, 0f);
         Rotate_3 = new Vector3(90f, 0f, 0f);
